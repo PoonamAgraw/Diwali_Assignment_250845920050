@@ -9,7 +9,6 @@ int main() {
         if (arr[i].length() > longest.length())
             longest = arr[i];
     }
-
     cout << "Longest string: "<< longest;
     return 0;
 }
