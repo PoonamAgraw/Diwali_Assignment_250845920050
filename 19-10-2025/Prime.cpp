@@ -3,21 +3,22 @@ using namespace std;
 bool isPrime(int n) {
     if (n < 2)
         return false;
-
     for (int i = 2; i <= n / 2; i++) {
         if (n % i == 0)
-            return false; 
+            return false;
     }
-    return true; 
+    return true;
 }
 
 int main() {
     int n;
     cout << "Enter a number: ";
     cin >> n;
-    if (isPrime(n))
-        cout <<n<<" is a prime number.";
-    else
-        cout <<n<<" is not a prime number.";
+    cout << "Prime numbers up to " << n <<":";;
+    for (int i = 2; i <= n; i++) {
+        if (isPrime(i))
+            cout << i << " ";
+    }
+
     return 0;
 }
