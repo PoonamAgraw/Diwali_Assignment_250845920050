@@ -8,7 +8,6 @@ int reverse(int n) {
         rev= rev* 10 + digit;
         n = n / 10;
     }
-
     return rev;
 }
 
